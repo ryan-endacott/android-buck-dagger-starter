@@ -1,6 +1,20 @@
 android_library(
   name = 'application',
   srcs = glob(['*.java']),
+  deps = [
+    '//third-party/java/jsr-330:jsr-330',
+    '//third-party/square/dagger:dagger',
+    '//third-party/square/dagger:dagger-compiler',
+  ],
+  annotation_processors = [
+    'dagger.internal.codegen.ValidationProcessor',
+    'dagger.internal.codegen.InjectAdapterProcessor',
+    'dagger.internal.codegen.ModuleAdapterProcessor',
+    'dagger.internal.codegen.GraphAnalysisProcessor',
+  ],
+  annotation_processor_deps = [
+    '//third-party/square/dagger:dagger-compiler',
+  ],
   visibility = [ 'PUBLIC' ],
 )
 
