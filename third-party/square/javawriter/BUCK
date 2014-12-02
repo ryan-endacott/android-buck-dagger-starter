@@ -1,0 +1,7 @@
+prebuilt_jar(
+  name = 'javawriter',
+  binary_jar = 'javawriter-2.5.0.jar',
+  visibility = [
+    'PUBLIC',
+  ],
+)

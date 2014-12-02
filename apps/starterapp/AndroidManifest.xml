@@ -5,8 +5,9 @@
 
   <application
       android:label='@string/app_name'
+      android:name="com.ryanendacott.starterapp.application.MainApplication"
       android:hardwareAccelerated='true'>
-    <activity android:name='com.ryanendacott.starterapp.application.MainActivity'>
+    <activity android:name='com.ryanendacott.starterapp.main.MainActivity'>
       <intent-filter>
         <action android:name='android.intent.action.MAIN' />
         <category android:name='android.intent.category.LAUNCHER' />

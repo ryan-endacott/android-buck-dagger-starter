@@ -1,0 +1,15 @@
+android_library(
+  name = 'main',
+  srcs = glob(['*.java']),
+  deps = [
+    '//java/com/ryanendacott/starterapp/application:application',
+    '//third-party/java/jsr-330:jsr-330',
+    '//third-party/square/dagger:dagger',
+  ],
+  visibility = [ 'PUBLIC' ],
+)
+
+project_config(
+  src_target = ':main',
+)
+

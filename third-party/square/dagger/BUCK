@@ -4,6 +4,7 @@ java_library(
     ':dagger',
     ':dagger-compiler-java',
     '//third-party/java/jsr-330:jsr-330',
+    '//third-party/square/javawriter:javawriter',
   ],
   exported_deps = [
     ':dagger',
