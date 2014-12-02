@@ -1,4 +1,5 @@
 *.iml
+/.idea
 /.idea/compiler.xml
 /.idea/libraries/*.xml
 /.idea/modules.xml
