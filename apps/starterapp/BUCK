@@ -1,5 +1,5 @@
 android_binary(
-  name = 'app',
+  name = 'starterapp',
   manifest = 'AndroidManifest.xml',
   target = 'Google Inc.:Google APIs:19',
   keystore = ':debug_keystore',
@@ -16,5 +16,5 @@ keystore(
 )
 
 project_config(
-  src_target = ':app',
+  src_target = ':starterapp',
 )

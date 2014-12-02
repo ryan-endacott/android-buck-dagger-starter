@@ -1,5 +1,5 @@
 [alias]
-    app = //apps/myapp:app
+    app = //apps/starterapp:starterapp
 [java]
     src_roots = /java/
 [project]
