@@ -1,0 +1,31 @@
+java_library(
+  name = 'dagger-compiler',
+  deps = [
+    ':dagger',
+    ':dagger-compiler-java',
+  ],
+  exported_deps = [
+    ':dagger',
+    ':dagger-compiler-java',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+prebuilt_jar(
+  name = 'dagger',
+  binary_jar = 'dagger-1.2.2.jar',
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+prebuilt_jar(
+  name = 'dagger-compiler-java',
+  binary_jar = 'dagger-compiler-1.2.2.jar',
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
