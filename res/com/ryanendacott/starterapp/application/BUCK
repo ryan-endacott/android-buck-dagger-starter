@@ -1,9 +1,9 @@
 android_resource(
   name = 'res',
   res = 'res',
-  package = 'com.example',
+  package = 'com.ryanendacott.starterapp',
   visibility = [
-    '//apps/myapp:',
+    '//apps/starterapp:',
   ],
 )
 

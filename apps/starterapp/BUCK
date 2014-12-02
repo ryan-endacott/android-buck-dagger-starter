@@ -4,8 +4,8 @@ android_binary(
   target = 'Google Inc.:Google APIs:19',
   keystore = ':debug_keystore',
   deps = [
-    '//java/com/example/activity:activity',
-    '//res/com/example/activity:res',
+    '//java/com/ryanendacott/starterapp/application:application',
+    '//res/com/ryanendacott/starterapp/application:res',
   ],
 )
 
