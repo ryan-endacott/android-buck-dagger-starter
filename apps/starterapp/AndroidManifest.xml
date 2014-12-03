@@ -5,7 +5,7 @@
 
   <application
       android:label='@string/app_name'
-      android:name=".application.MainApplication"
+      android:name=".application.BaseApplication"
       android:hardwareAccelerated='true'>
     <activity android:name='.main.MainActivity'>
       <intent-filter>
