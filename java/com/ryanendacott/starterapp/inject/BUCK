@@ -1,0 +1,11 @@
+android_library(
+  name = 'inject',
+  srcs = glob(['*.java']),
+  deps = [
+  ],
+  visibility = [ 'PUBLIC' ],
+)
+
+project_config(
+  src_target = ':inject',
+)

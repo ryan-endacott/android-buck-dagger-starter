@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.ryanendacott.starterapp.application;
+package com.ryanendacott.starterapp.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import com.ryanendacott.starterapp.application.MainApplication;
 
 public abstract class BaseActivity extends Activity {
   @Override protected void onCreate(Bundle savedInstanceState) {

@@ -2,6 +2,8 @@ android_library(
   name = 'application',
   srcs = glob(['*.java']),
   deps = [
+    '//java/com/ryanendacott/starterapp/inject:inject',
+    '//java/com/ryanendacott/starterapp/main:main',
     '//third-party/java/jsr-330:jsr-330',
     '//third-party/square/dagger:dagger',
     '//third-party/square/dagger:dagger-compiler',

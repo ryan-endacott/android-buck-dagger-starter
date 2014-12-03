@@ -1,7 +1,7 @@
 package com.ryanendacott.starterapp.main;
 
 import android.os.Bundle;
-import com.ryanendacott.starterapp.application.BaseActivity;
+import com.ryanendacott.starterapp.activity.BaseActivity;
 
 /**
  * Main activity for the app.
