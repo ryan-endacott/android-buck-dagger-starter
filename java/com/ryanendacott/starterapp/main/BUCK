@@ -1,21 +1,8 @@
-android_library(
+android_library_with_dagger(
   name = 'main',
   srcs = glob(['*.java']),
   deps = [
     '//java/com/ryanendacott/starterapp/inject:inject',
-    '//third-party/java/jsr-330:jsr-330',
-    '//third-party/square/dagger:dagger',
-    '//third-party/square/dagger:dagger-compiler',
-    '//third-party/square/javawriter:javawriter',
-  ],
-  annotation_processors = [
-    'dagger.internal.codegen.ValidationProcessor',
-    'dagger.internal.codegen.InjectAdapterProcessor',
-    'dagger.internal.codegen.ModuleAdapterProcessor',
-    'dagger.internal.codegen.GraphAnalysisProcessor',
-  ],
-  annotation_processor_deps = [
-    '//third-party/square/dagger:dagger-compiler',
   ],
   visibility = [ 'PUBLIC' ],
 )

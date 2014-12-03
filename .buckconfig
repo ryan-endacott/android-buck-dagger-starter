@@ -1,5 +1,7 @@
 [alias]
     app = //apps/starterapp:starterapp
+[buildfile]
+    includes = //tools/BUCKRULES.def
 [java]
     src_roots = /java/
 [project]

@@ -1,0 +1,28 @@
+# Define a custom BUCK rule for an Android library using Dagger.
+
+# Adds Dagger dependencies to a regular Android library.
+def android_library_with_dagger(**kwargs):
+  if not 'deps' in kwargs:
+    kwargs['deps'] = []
+  kwargs['deps'].extend([
+    '//third-party/java/jsr-330:jsr-330',
+    '//third-party/square/dagger:dagger',
+    '//third-party/square/dagger:dagger-compiler',
+    '//third-party/square/javawriter:javawriter',
+  ])
+  if not 'annotation_processors' in kwargs:
+    kwargs['annotation_processors'] = []
+  kwargs['annotation_processors'].extend([
+    'dagger.internal.codegen.ValidationProcessor',
+    'dagger.internal.codegen.InjectAdapterProcessor',
+    'dagger.internal.codegen.ModuleAdapterProcessor',
+    'dagger.internal.codegen.GraphAnalysisProcessor',
+  ])
+  if not 'annotation_processor_deps' in kwargs:
+    kwargs['annotation_processor_deps'] = []
+  kwargs['annotation_processor_deps'].extend([
+    '//third-party/square/dagger:dagger-compiler',
+  ])
+  android_library(**kwargs)
+
+
