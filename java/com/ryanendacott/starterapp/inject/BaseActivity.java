@@ -14,17 +14,16 @@
  * limitations under the License.
  */
 
-package com.ryanendacott.starterapp.activity;
+package com.ryanendacott.starterapp.inject;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.ryanendacott.starterapp.application.MainApplication;
 
 public abstract class BaseActivity extends Activity {
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     // Perform injection so that when this call returns all dependencies will be available for use.
-    ((MainApplication) getApplication()).inject(this);
+    ((Injector) getApplication()).inject(this);
   }
 }

@@ -16,6 +16,7 @@
 
 package com.ryanendacott.starterapp.application;
 
+import android.app.Application;
 import android.content.Context;
 import dagger.Module;
 import dagger.Provides;
@@ -27,9 +28,9 @@ import javax.inject.Singleton;
  */
 @Module(library = true)
 public class ApplicationModule {
-  private final MainApplication mApplication;
+  private final Application mApplication;
 
-  public ApplicationModule(MainApplication application) {
+  public ApplicationModule(Application application) {
     mApplication = application;
   }
 

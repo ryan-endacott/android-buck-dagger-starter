@@ -2,6 +2,19 @@ android_library(
   name = 'inject',
   srcs = glob(['*.java']),
   deps = [
+    '//third-party/java/jsr-330:jsr-330',
+    '//third-party/square/dagger:dagger',
+    '//third-party/square/dagger:dagger-compiler',
+    '//third-party/square/javawriter:javawriter',
+  ],
+  annotation_processors = [
+    'dagger.internal.codegen.ValidationProcessor',
+    'dagger.internal.codegen.InjectAdapterProcessor',
+    'dagger.internal.codegen.ModuleAdapterProcessor',
+    'dagger.internal.codegen.GraphAnalysisProcessor',
+  ],
+  annotation_processor_deps = [
+    '//third-party/square/dagger:dagger-compiler',
   ],
   visibility = [ 'PUBLIC' ],
 )
@@ -9,3 +22,4 @@ android_library(
 project_config(
   src_target = ':inject',
 )
+
