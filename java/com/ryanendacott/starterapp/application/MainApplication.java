@@ -24,7 +24,7 @@ public class MainApplication extends Application {
    */
   protected List<Object> getModules() {
     return Arrays.<Object>asList(
-        new AndroidModule(this)
+        new ApplicationModule(this)
     );
   }
 

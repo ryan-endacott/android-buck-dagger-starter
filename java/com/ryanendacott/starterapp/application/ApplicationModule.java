@@ -26,10 +26,10 @@ import javax.inject.Singleton;
  * {@link android.app.Application} to create.
  */
 @Module(library = true)
-public class AndroidModule {
+public class ApplicationModule {
   private final MainApplication mApplication;
 
-  public AndroidModule(MainApplication application) {
+  public ApplicationModule(MainApplication application) {
     mApplication = application;
   }
 
