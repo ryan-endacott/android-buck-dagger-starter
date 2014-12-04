@@ -19,6 +19,9 @@ package com.ryanendacott.starterapp.inject;
 import android.app.Activity;
 import android.os.Bundle;
 
+/**
+ * Base activity class that supports injected members.
+ */
 public abstract class BaseActivity extends Activity {
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
