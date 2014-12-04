@@ -5,10 +5,16 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:textSize="30sp"
+    android:text="Hello from the activity!"/>
+
   <fragment
+    android:name="com.ryanendacott.starterapp.main.MainFragment"
     android:id="@+id/main_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    class=""></fragment>
+    android:layout_height="match_parent"></fragment>
 
 </LinearLayout>

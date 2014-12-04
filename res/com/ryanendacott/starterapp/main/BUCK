@@ -2,6 +2,8 @@ android_resource(
   name = 'res',
   res = 'res',
   package = 'com.ryanendacott.starterapp',
+  deps = [
+  ],
   visibility = [
     '//java/com/ryanendacott/starterapp/main:main',
   ],

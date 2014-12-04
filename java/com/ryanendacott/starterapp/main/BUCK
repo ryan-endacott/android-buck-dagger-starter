@@ -3,6 +3,7 @@ android_library_with_dagger(
   srcs = glob(['*.java']),
   deps = [
     '//java/com/ryanendacott/starterapp/inject:inject',
+    '//res/com/ryanendacott/starterapp/main:res',
   ],
   visibility = [ 'PUBLIC' ],
 )
