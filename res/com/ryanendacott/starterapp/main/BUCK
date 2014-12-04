@@ -1,0 +1,13 @@
+android_resource(
+  name = 'res',
+  res = 'res',
+  package = 'com.ryanendacott.starterapp',
+  visibility = [
+    '//java/com/ryanendacott/starterapp/main:main',
+  ],
+)
+
+project_config(
+  src_target = ':res',
+  src_roots = None,
+)
