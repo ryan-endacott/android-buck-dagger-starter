@@ -2,9 +2,6 @@
 
 java_library(
   name = 'fake',
-  srcs = glob(['*.java']),
-  deps = [
-  ],
 )
 
 project_config(
